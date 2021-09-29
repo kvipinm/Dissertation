@@ -1,3 +1,4 @@
 # Dissertation
-# Relocation of Historical Earthquake using Nonlinear Location Software
-Probabilistic, Non-Linear, Global-Search Earthquake Location in 3D Media
+# Relocation of Historical Earthquake
+Relocation of Historical Earthquake primarily in Indian subcontinent using Nonlinear Location Software(NLLoc).
+NLLoc gives Probabilistic, Non-Linear, Global-Search Earthquake Location in 3D Media.
