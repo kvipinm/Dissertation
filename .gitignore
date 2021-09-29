@@ -1,3 +1,4 @@
 nll/
-ref/
-seismicity/
+*.pdf
+*.ipynb
+
