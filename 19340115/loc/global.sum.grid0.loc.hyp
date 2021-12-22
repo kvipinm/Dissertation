@@ -1,5 +1,5 @@
 NLLOC "./loc/global.19340115.084418.grid0" "LOCATED" "Location completed."
-SIGNATURE "Vipin Maurya (GPT, IIT Roorkee)   obs:./obs/19340115.ims   NLLoc:v7.00.00(27Oct2017)  run:28Aug2021 14h04m20"
+SIGNATURE "Vipin Maurya (GPT, IIT Roorkee)   obs:./obs/19340115.ims   NLLoc:v7.00.00(27Oct2017)  run:22Dec2021 00h40m05"
 COMMENT "ISC_IMS1.0 events"
 GRID  361 181 601  -180 -90 0  1 1 1 PROB_DENSITY
 SEARCH OCTREE nInitial 17628 nEvaluated 50012 smallestNodeSide 3.679244/3.257664/0.782552 oct_tree_integral 1.773913e+05 scatter_volume 1.773913e+05
