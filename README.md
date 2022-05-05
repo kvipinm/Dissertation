@@ -1,9 +1,9 @@
-# Relocation of Historical Earthquake in the Himalayas.
+# Relocation of Historical Earthquake in the Himalayas
 Relocation of Historical Earthquake primarily in Indian subcontinent using Nonlinear Location Software(NLLoc).
 NLLoc gives Probabilistic, Non-Linear, Global-Search Earthquake Location in 3D Media.
 
-
-Dependencies
+## Installations
+## Dependencies
 To build the NLLoc program make sure gcc, make, jdk, gmt, taup are installed and updated. If not installed, install with commands:
 
 	sudo apt update
@@ -12,14 +12,14 @@ To build the NLLoc program make sure gcc, make, jdk, gmt, taup are installed and
 References:
 Taup: http://www.seis.sc.edu/TauP/
 
-TauP_NLL
+## TauP_NLL
 Get TauP_NLL.jar file from http://alomax.free.fr/nlloc/java/TauP_NLL.jar
 Add the path of the jar file to java CLASSPATH variable :
 
 		export CLASSPATH="/home/../TauP_NLL.jar:$CLASSPATH"
 
 To make this change permanent add the above command at the end of .bashrc file located at /home directory.
-NLLoc
+## NLLoc
 Get the source code from http://alomax.free.fr/nlloc/soft7.00/index.html and extract it.
 
 Go to the src folder where Makefile is located let it be "/home/../src" then Build the program with command:
@@ -36,7 +36,7 @@ file located in /home directory :
 	export PATH="/home/../src:$PATH"
 	fi
 
-SeismicityViewer
+## SeismicityViewer
 Download SeismicityViewer jar file http://alomax.free.fr/seismicity/SeismicityViewer50.jar
 Add the path of jar file to java CLASSPATH variable :
 	
@@ -44,7 +44,7 @@ Add the path of jar file to java CLASSPATH variable :
 
 To make this change permanent add the above command at the end of .bashrc file located at /home directory.
 
-PyGMT
+## PyGMT
 
 Get MiniConda installer from https://docs.conda.io/en/latest/miniconda.html install using:
 
