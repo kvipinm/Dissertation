@@ -1,0 +1,374 @@
+
+International Seismological Centre
+ISC: On-Line Bulletin
+
+Any use of data from the ISC should be cited. The correct format for citations may be found on our citation page.
+
+Once the search has completed, a compressed KML file will be available to view the results in Google Earth.
+
+Make an event map
+
+Agencies whose data contributed towards the results of this search are listed at the bottom of the page.
+
+DATA_TYPE BULLETIN ISF2.1:short
+ISC Bulletin
+Event    16957848 Kashmir-India border region
+
+   Date       Time        Err   RMS Latitude Longitude  Smaj  Smin  Az Depth   Err Ndef Nsta Gap  mdist  Mdist Qual   Author      OrigID
+1905/04/04 00:50:00                  33.0000   76.0000                  35.0                                       uk GUTE          1961921
+ (Middlemiss (1910), Omori (1907a))
+1905/04/04 00:50:00.00               33.0000   76.0000                   0.0                                          CENT        602318523
+1905/04/04 00:49:59.48   0.85 4.447  32.6359   76.7878  20.6 9.839  32  20.0f        39   39 159  10.54  58.24 m i ke ISC         605951152
+ (#PRIME)
+ (Depth fixed to depth of a reported hypocentre)
+
+Year Volume Page1 Page2 Journal
+2008    117   773   782 J. Earth Syst. Sci.
+ (#AUTHOR Hough,S. , Bilham,R.                                                             )
+ (#TITLE  Site response of the Ganges basin inferred from re-evaluated macroseismic        )
+ (+       observations from the 1897 Shillong, 1905 Kangra, and 1934 Nepal earthquakes     )
+2011     77   511   520 J. geol. Soc. India
+ (#AUTHOR Ghosh,G. , Mahajan,A.                                                            )
+ (#TITLE  Interpretation of intensity attenuation relation of 1905 Kangra earthquake with  )
+ (+       epicentral distance and magnitude in the Northwest Himalayan region              )
+2010     75   225   238 J. geol. Soc. India
+ (#AUTHOR Jayangondaperumal,R. , Dubey,A. , Sen,K.                                         )
+ (#TITLE  Structural and magnetic fabric studies of recess structures in the western       )
+ (+       Himalaya: Implications for 1905 Kangra earthquake                                )
+2009     99    95   109 Bull. seism. Soc. Am.
+ (#AUTHOR Kumar,N. , Sharma,J. , Arora,B.R. , Mukhopadhyay,S.                              )
+ (#TITLE  Seismotectonic Model of the Kangra-Chamba Sector of Northwest Himalaya:          )
+ (+       Constraints from Joint Hypocenter Determination and Focal Mechanism              )
+2012     31             Tectonics
+ (#AUTHOR Singh,T. , Awasthi,A.K. , Caputo,R.                                              )
+ (#TITLE  The sub-Himalayan fold-thrust belt in the 1905 Kangra earthquake zone: A         )
+ (+       critical taper model perspective for seismic hazard analysis                     )
+2013     62   638   646 J. Asian Earth Sci.
+ (#AUTHOR Kumar,N. , Arora,B. , Mukhopadhyay,S. , Yadav,D.                                 )
+ (#TITLE  Seismogenesis of clustered seismicity beneath the Kangra-Chamba sector of        )
+ (+       northwest Himalaya: Constraints from 3D local earthquake tomography              )
+2013     81    61    78 J. geol. Soc. India
+ (#AUTHOR RaviKumar,M. , Mishra,D. , Singh,B. , VenkatRaju,D. , Singh,M.                   )
+ (#TITLE  Geodynamics of NW India: Subduction, lithospheric flexure, ridges and seismicity )
+1981                    
+ (#AUTHOR Wang,S.C.                                                                        )
+ (#TITLE  Tectonic implications of global seismicity studies                               )
+1977     82  2981  2987 J. geophys. Res.
+ (#AUTHOR Kanamori,H.                                                                      )
+ (#TITLE  The energy release in great earthquakes                                          )
+2013     17   593   605 J. Seismol.
+ (#AUTHOR Mittal,H. , Kumar,A. , Kamal                                                     )
+ (#TITLE  Ground motion estimation in Delhi from postulated regional and local earthquakes )
+2013     17   579   592 J. Seismol.
+ (#AUTHOR Sivaram,K. , Kumar,D. , Teotia,S.S. , Rai,S.S. , Prakasam,K.S.                   )
+ (#TITLE  Source parameters and scaling relations for small earthquakes in Kumaon          )
+ (+       Himalaya, India                                                                  )
+2000    326             Tectonophysics
+ (#AUTHOR Thakur,V.C. , Sriram,V. , Mundepi,A.K.                                           )
+ (#TITLE  Seismotectonics of the great 1905 Kangra earthquake meizoseismal region in       )
+ (+       Kangra–Chamba, NW Himalaya                                                       )
+2013    122   107   122 J. Earth Syst. Sci.
+ (#AUTHOR Ghosh,G.K. , Mahajan,A.K.                                                        )
+ (#TITLE  Intensity attenuation relation at Chamba–Garhwal area in north-west Himalaya     )
+ (+       with epicentral distance and magnitude                                           )
+1970     79    26    32 Pure appl. Geophys.
+ (#AUTHOR Ram,A. , Rathor,H.S.                                                             )
+ (#TITLE  On frequency magnitude and energy of significant Indian earthquakes              )
+2013     61   808   821 Acta Geophys.
+ (#AUTHOR Bansal,B.K. , Verma,M.                                                           )
+ (#TITLE  Science and technology based earthquake risk reduction strategies: The Indian    )
+ (+       scenario                                                                         )
+2013    102  1203  1218 Int. J. Earth Sci.
+ (#AUTHOR Verma,M. , Bansal,B.K.                                                           )
+ (#TITLE  Seismic hazard assessment and mitigation in India: an overview                   )
+2013     84   820   828 Seismol. Res. Lett.
+ (#AUTHOR Mitra,K. , Ailawadi,S. , Rai,D.C.                                                )
+ (#TITLE  Initiatives in Educating Future Architects in Earthquake Resistant Design        )
+ (+       Practices                                                                        )
+2013    127    30    47 Earth Sci. Rev.
+ (#AUTHOR Mugnier,J.-L. , Gajurel,A. , Huyghe,P. , Jayangandaperumal,R. , Jouanne,F. ,      )
+ (+       Upreti,B.                                                                        )
+ (#TITLE  Structural interpretation of the great earthquakes of the last millennium in     )
+ (+       the central Himalaya                                                             )
+2013    102  1791  1810 Int. J. Earth Sci.
+ (#AUTHOR Thakur,V.C.                                                                      )
+ (#TITLE  Active tectonics of Himalayan Frontal Fault system                               )
+2013     84  1098  1108 Seismol. Res. Lett.
+ (#AUTHOR Rajendran,C.P. , Rajendran,K. , Sanwal,J. , Sandiford,M.                         )
+ (#TITLE  Archeological and Historical Database on the Medieval Earthquakes of the         )
+ (+       Central Himalaya: Ambiguities and Inferences                                     )
+2000     79  1237  1250 Curr. Sci.
+ (#AUTHOR Ambraseys,N.N.                                                                   )
+ (#TITLE  Reappraisal of north-Indian earthquakes at the turn of the 20th century          )
+2000     79    45    50 Curr. Sci.
+ (#AUTHOR Ambraseys,N.N. , Bilham,R.                                                       )
+ (#TITLE  A note on the Kangra Ms = 7.8 earthquake of 4 April 1905                         )
+1968      1    89    93 
+ (#AUTHOR Ambraseys,N.N.                                                                   )
+ (#TITLE  The seismicity of West Pakistan                                                  )
+2004    159   165   206 Geophys. J. Int.
+ (#AUTHOR Ambraseys,N.N. , Douglas,J.                                                      )
+ (#TITLE  Magnitude calibration of north Indian earthquakes                                )
+2004     88  1658  1663 Curr. Sci.
+ (#AUTHOR Bilham,R. , Ambraseys,N.N.                                                       )
+ (#TITLE  Apparent Himalayan slip deficit from the summation of seismic moments for the    )
+ (+       Himalayan earthquakes, 1500 – 2000                                               )
+2005     88  1632  1938 Curr. Sci.
+ (#AUTHOR Hough,S. , Bilham,R. , Ambraseys,N.N. , Feldl,N.                                 )
+ (#TITLE  Revisiting the 1897 Shillong and 1905 Kangra earthquakes in northern India:      )
+ (+       site response, Moho reflection and a triggered earthquake                        )
+2013     69  2021  2038 Natural Hazards
+ (#AUTHOR Kumar,N. , Yadav,D.K. , Mondal,S.K. , Roy,P.N.S.                                 )
+ (#TITLE  Stress drop and its relation to tectonic and structural elements for the         )
+ (+       meizoseismal region of great 1905 Kangra earthquake of the NW Himalaya           )
+2013    106   188       Curr. Sci.
+ (#AUTHOR Kayal,J.R.                                                                       )
+ (#TITLE  Seismotectonics of the great and large earthquakes in Himalaya                   )
+2013    106   229   236 Curr. Sci.
+ (#AUTHOR Malik,J.N. , Shah,A.A. , Naik,S.P. , Sahoo,S. , Okumura,K. , Patra,N.R.          )
+ (#TITLE  Active tectonics in the northwestern outer Himalaya: evidence of                 )
+ (+       large-magnitude palaeoearthquakes in Pinjaur Dun and the Frontal Himalaya        )
+2006      1     1    28 
+ (#AUTHOR Omori,F.                                                                         )
+ (#TITLE  Report on the great Indian earthquake of 1905                                    )
+1977     67   587   598 Bull. seism. Soc. Am.
+ (#AUTHOR Geller,R.J. , Kanamori,H.                                                        )
+ (#TITLE  Magnitudes of great shallow earthquakes from 1904 to 1952                        )
+1978     68  1763  1764 Bull. seism. Soc. Am.
+ (#AUTHOR Geller,R.J. , Kanamori,H. , Abe,K.                                               )
+ (#TITLE  Addenda and corrections to “Magnitude of great shallow earthquakes from 1904 to  )
+ (+       1952”                                                                         )
+2015    105  2325  2342 Bull. seism. Soc. Am.
+ (#AUTHOR Malik,J.N. , Sahoo,S. , Satuluri,S. , Okumura,K.                                 )
+ (#TITLE  Active Fault and Paleoseismic Studies in Kangra Valley: Evidence of Surface      )
+ (+       Rupture of a Great Himalayan 1905 Kangra Earthquake (Mw 7.8), Northwest          )
+ (+       Himalaya, India                                                                  )
+2015    109             Curr. Sci.
+ (#AUTHOR Thakur,V.V. , Jayangondaperumal,R.                                               )
+ (#TITLE  Seismogenic active fault zome between 2005 Kashmir and 1905 Kangra earthquake    )
+ (+       meizoseismal regions and earthquake hazard in eastern Kashmir seismic gap        )
+1997     24   225   228 Geophys. Res. Lett.
+ (#AUTHOR Gahalaut,V.K. , Chander,R.                                                       )
+ (#TITLE  Evidence for an earthquake cycle in NW outer Himalaya near 78°E longitude from   )
+ (+       precision levelling observations                                                 )
+2016     80   487   503 Natural Hazards
+ (#AUTHOR Sharma,B. , Chopra,S. , Kumar,V.                                                 )
+ (#TITLE  Simulation of strong ground motion for 1905 Kangra earthquake and a possible     )
+ (+       megathrust earthquake (Mw 8.5) in western Himalaya (India) using Empirical       )
+ (+       Green’s Function technique                                                       )
+2016     87  1150  1160 Seismol. Res. Lett.
+ (#AUTHOR Joshi,M. , Thakur,V.C.                                                           )
+ (#TITLE  Signatures of 1905 Kangra and 1555 Kashmir earthquakes in medieval period        )
+ (+       temples of Chamba region, Northwest Himalaya                                     )
+2010      1    51    67 Geomatics Natural Hazards Risk
+ (#AUTHOR Kayal,J.R.                                                                       )
+ (#TITLE  Himalayan tectonic model and the great earthquakes: an appraisal                 )
+2005     32             Geophys. Res. Lett.
+ (#AUTHOR Wallace,K. , Bilham,R. , Blume,F. , Gaur,V.K. , Gahalaut,V.                      )
+ (#TITLE  Surface deformation in the region of the 1905 Kangra Mw = 7.8 earthquake in the  )
+ (+       period 1846–2001                                                                 )
+2017    141   253   258 J. Asian Earth Sci.
+ (#AUTHOR Paul,A. , Singh,R.                                                               )
+ (#TITLE  Relevance of seismicity in Kumaun-Garhwal Himalaya in context of recent 25th     )
+ (+       April 2015 Mw 7.8 Nepal earthquake                                               )
+2017   4:19             Geosci. Lett.
+ (#AUTHOR Arora,S. , Malik,J.N.                                                            )
+ (#TITLE  Overestimation of the earthquake hazard along the Himalaya: constraints in       )
+ (+       bracketing of medieval earthquakes from paleoseismic studies                     )
+2017    148   131   141 J. Asian Earth Sci.
+ (#AUTHOR Vorobieva,I. , Mandal,P. , Gorshkov,A.                                           )
+ (#TITLE  Block-and-fault dynamics modelling of the Himalayan frontal arc: Implications    )
+ (+       for seismic cycle, slip deficit, and great earthquakes                           )
+2017    462    90   108 Quat. Int.
+ (#AUTHOR Sahoo,S. , Malik,J.N.                                                            )
+ (#TITLE  Active fault topography along Kangra Valley Fault in the epicentral zone of      )
+ (+       1905 Mw7.8 earthquake NW Himalaya, India                                         )
+2017    107  2467  2479 Bull. seism. Soc. Am.
+ (#AUTHOR Szeliga,W. , Bilham,R.                                                           )
+ (#TITLE  New constraints on the mechanism and rupture area for the 1905 Mw 7.8 Kangra     )
+ (+       earthquake, northwest Himalaya                                                   )
+2018     91     9    14 J. geol. Soc. India
+ (#AUTHOR Srivastava,H.N. , Verma,M. , Bansal,B.K.                                         )
+ (#TITLE  Fault rupture directivity of large earthquakes in Himalaya                       )
+2018     19  3097  3114 Geochem. Geophys. Geosyst.
+ (#AUTHOR Paul,H. , Priestley,K.F. , Powali,D. , Sharma,S. , Mitra,S. , Wanchoo,S.         )
+ (#TITLE  Signatures of the existence of frontal and lateral ramp structures near the      )
+ (+       Kishtwar Window of the Jammu and Kashmir Himalaya: Evidence from                 )
+ (+       microseismicity and source mechanisms                                            )
+2018    108  2877  2893 Bull. seism. Soc. Am.
+ (#AUTHOR Wyss,M. , Gupta,S. , Rosset,P.                                                   )
+ (#TITLE  Casualty estimates in repeat Himalayan earthquakes in India                      )
+2017    112             Curr. Sci.
+ (#AUTHOR Naresh,K. , Vishal,C. , Dhamodharan,S. , Gautam,R. , Devajit,H. , Gautam,P.K.R.  )
+ (#TITLE  Prominent precursory signatures observed in soil and water radon data at         )
+ (+       multi-parametric geophysical observatory, Ghuttu for Mw 7.8 Nepal earthquake     )
+ (+       (907)                                                                         )
+1988     17    51   105 Earthq. Engng struct. Dyn.
+ (#AUTHOR Ambraseys,N.N.                                                                   )
+ (#TITLE  Engineering seismology: Part II                                                  )
+1979     69   773   823 Bull. seism. Soc. Am.
+ (#AUTHOR Quittmeyer,R.C. , Jacob,K.H.                                                     )
+ (#TITLE  Historical and modern seismicity of Pakistan, Afghanistan, northwestern India,   )
+ (+       and southeastern Iran                                                            )
+2019    757   108   122 Tectonophysics
+ (#AUTHOR Arora,S. , Malik,J.N. , Sahoo,S.                                                 )
+ (#TITLE  Paleoseismic evidence of a major earthquake event(s) along the hinterland        )
+ (+       faults: Pinjore Garden Fault (PGF) and Jhajra Fault (JF) in northwest Himalaya,  )
+ (+       India                                                                         )
+2019     23   537   559 J. Seismol.
+ (#AUTHOR Pasari,S.                                                                        )
+ (#TITLE  Inverse Gaussian versus lognormal distribution in earthquake forecasting: keys   )
+ (+       and clues                                                                        )
+1984     89  6203  6227 J. geophys. Res.: Solid Earth
+ (#AUTHOR Molnar,P. , Qidong,D.                                                            )
+ (#TITLE  Faulting associated with large earthquakes and the average rate of deformation   )
+ (+       in central and eastern Asia                                                      )
+1981      4   259   277 
+ (#AUTHOR Seeber,L. , Armbruster,J.G.                                                      )
+ (#TITLE  Great Detachment Earthquakes Along the Himalayan Arc and Long‐Term Forecasting   )
+2019     67   753   763 Acta Geophys.
+ (#AUTHOR Mittal,H. , Wu,Y.-M. , Lin,T.-L. , Legendre,C.P. , Gupta,S. , Yang,B.M.          )
+ (#TITLE  Time-dependent shake map for Uttarakhand Himalayas, India, using recorded        )
+ (+       earthquakes                                                                      )
+2019     23   725   769 J. Seismol.
+ (#AUTHOR Nath,S.K. , Adhikari,M.D. , Maiti,S.K. , Ghatak,C.                               )
+ (#TITLE  Earthquake hazard potential of Indo-Gangetic Foredeep: its seismotectonism,      )
+ (+       hazard, and damage modeling for the cities of Patna, Lucknow, and Varanasi       )
+1983     32    45    59 Phys. Earth planet. Interiors
+ (#AUTHOR Abe,K. , Noguchi,S.                                                              )
+ (#TITLE  Determination of magnitude for large shallow earthquakes 1898-1917               )
+1983     33     1    11 Phys. Earth planet. Interiors
+ (#AUTHOR Abe,K. , Noguchi,S.                                                              )
+ (#TITLE  Revision of magnitudes of large shallow earthquakes, 1897-1912                   )
+1981     27    72    92 Phys. Earth planet. Interiors
+ (#AUTHOR Abe,K.                                                                         )
+ (#TITLE  Magnitudes of large shallow earthquakes from 1904 to 1980                        )
+2019    483   423   482 Geol. Soc. Spec. Publ.
+ (#AUTHOR Bilham,R.                                                                        )
+ (#TITLE  Himalayan earthquakes: a review of historical seismicity and early 21st century  )
+ (+       slip potential                                                                   )
+2021     40             Tectonics
+ (#AUTHOR Parija,M.P. , Kumar,S. , Tiwari,V.M. , Biswal,S. , Biswas,A. , Arjun,V.H.        )
+ (#TITLE  Coulomb stress modelling and seismicity in the western Himalaya, India since     )
+ (+       1905: Implications for the incomplete ruptures of the Main Himalayan Thrust      )
+
+Magnitude  Err Nsta Author      OrigID
+MS     8.0          PAS           1961921
+mB     8.1          ABE1        602318523
+Ms     7.5          AN2         602318523
+Mw     7.8          P&S         602318523
+UK     8.0          GUTE        602318523
+MS     7.8 0.2    3 ISC         605951152
+
+Sta     Dist  EvAz Phase        Time      TRes  Azim AzRes   Slow   SRes Def   SNR       Amp   Per Qual Magnitude    ArrID    Agy   Deploy   Ln Auth  Rep   PCh ACh L   Lat       Lon     Elev    Depth
+TAS    10.54 327.5 Pn       00:52:24      -5.3                           T__                        __              606348860 ISC   IR       -- ISA   ISC   ??? ??? _  41.3250   69.2950   470.0    0.0
+TAS    10.54 327.5 Sn       00:54:26      -0.8                           T__                        __              606348860 ISC   IR       -- ISA   ISC   ??? ??? _  41.3250   69.2950   470.0    0.0
+DRN    24.40 300.8 P        00:55:03     -13.4                           ___                        __              606348861 ISC   IR       -- ISA   ISC   ??? ??? _  42.0300   48.3300   -28.0    0.0
+DRN    24.40 300.8 S        00:59:21     -14.0                           ___                        __              606348861 ISC   IR       -- ISA   ISC   ??? ??? _  42.0300   48.3300   -28.0    0.0
+TIF    26.93 298.9 P        00:55:48       8.7                           T__                        __              606348862 ISC   IR       -- ISA   ISC   ??? ??? _  41.7167   44.8000   399.0    0.0
+TIF    26.93 298.9 S        01:00:31      15.7                           ___                        __              606348862 ISC   IR       -- ISA   ISC   ??? ??? _  41.7167   44.8000   399.0    0.0
+AKH    27.85 297.9 P        00:55:59      11.1                           ___                        __              606348863 ISC   IR       -- ISA   ISC   ??? ??? _  41.4100   43.4928  1708.0    0.0
+AKH    27.85 297.9 S        01:00:34       3.8                           T__                        __              606348863 ISC   IR       -- ISA   ISC   ??? ??? _  41.4100   43.4928  1708.0    0.0
+IRK    27.93  37.3 P        00:55:44      -4.2                           T__                        __              606348865 ISC   IR       -- ISA   ISC   ??? ??? _  52.2431  104.2711   467.0    0.0
+IRK    27.93  37.3 S        01:00:52      21.1                           ___                        __              606348865 ISC   IR       -- ISA   ISC   ??? ??? _  52.2431  104.2711   467.0    0.0
+BOR    27.99 298.8 P        00:55:52       3.0                           T__                        __              606348864 ISC   IR       -- ISA   ISC   ??? ??? _  41.8333   43.3833   794.0    0.0
+BOR    27.99 298.8 S        01:00:53      20.8                           ___                        __              606348864 ISC   IR       -- ISA   ISC   ??? ??? _  41.8333   43.3833   794.0    0.0
+BEYL   34.39 283.6 PP       00:58:00      -3.3                           ___                        __              606348866 ISC   IR       -- ISA   ISC   ??? ??? _  33.8717   35.4932    49.0    0.0
+ZKW    37.72  79.9 PP       00:59:00      20.0                           ___                        __              606348867 ISC   IR       -- ISA   ISC   ??? ??? _  31.1833  121.4330     7.0    0.0
+MAN    43.98 103.3 P        00:58:25      19.4                           ___                        __              606348868 ISC   IR       -- ISA   ISC   ??? ??? _  14.6600  121.0780    70.0    0.0
+MAN    43.98 103.3 S        01:05:03      26.3                           ___                        __              606348868 ISC   IR       -- ISA   ISC   ??? ??? _  14.6600  121.0780    70.0    0.0
+KRA    44.95 310.2 P        00:58:12      -0.9                           T__                        __              606348869 ISC   IR       -- ISA   ISC   ??? ??? _  50.0561   19.9397   223.0    0.0
+KRA    44.95 310.2 PcS      01:03:48       0.5                           T__                        __              606348869 ISC   IR       -- ISA   ISC   ??? ??? _  50.0561   19.9397   223.0    0.0
+HRB    46.14 307.2 P        00:58:19      -3.4                           T__                        __              606348870 ISC   IR       -- ISA   ISC   ??? ??? _  47.8736   18.1928   115.0    0.0
+TAD    47.03  71.6 P        00:58:49      19.5                           ___                        __              606348873 ISC   IR       -- ISA   ISC   ??? ??? _  34.2833  133.7670     4.0    0.0
+TAD    47.03  71.6 S        01:05:49      28.7                           ___                        __              606348873 ISC   IR       -- ISA   ISC   ??? ??? _  34.2833  133.7670     4.0    0.0
+UPP    47.03 323.7 P        00:58:22      -7.1                           ___                        __              606348871 ISC   IR       -- ISA   ISC   ??? ??? _  59.8576   17.6229    14.0    0.0
+UPP    47.03 323.7 S        01:05:19      -0.6                           T__                        __              606348871 ISC   IR       -- ISA   ISC   ??? ??? _  59.8576   17.6229    14.0    0.0
+VIE    47.35 307.8 P        00:58:48      16.1                           ___                        __              606348872 ISC   IR       -- ISA   ISC   ??? ??? _  48.2483   16.3617   198.0    0.0
+VIE    47.35 307.8 S        01:04:12     -72.5                           ___                        __              606348872 ISC   IR       -- ISA   ISC   ??? ??? _  48.2483   16.3617   198.0    0.0
+DJA    48.03 138.0 P        00:58:33      -4.5                           T__                        __              606348874 ISC   IR       -- ISA   ISC   ??? ??? _  -6.1833  106.8362     8.0    0.0
+DJA    48.03 138.0 S        01:05:33      -1.8                           T__                        __              606348874 ISC   IR       -- ISA   ISC   ??? ??? _  -6.1833  106.8362     8.0    0.0
+KOB    48.05  70.7 P        00:58:26     -11.5                           ___                        __              606348875 ISC   IR       -- ISA   ISC   ??? ??? _  34.6883  135.1800    58.0    0.0
+KOB    48.05  70.7 S        01:05:26      -8.8                           ___                        __              606348875 ISC   IR       -- ISA   ISC   ??? ??? _  34.6883  135.1800    58.0    0.0
+OSK    48.45  70.6 P        00:58:51      10.3                           ___                        __              606348877 ISC   IR       -- ISA   ISC   ??? ??? _  34.6117  135.6600   472.0    0.0
+OSK    48.45  70.6 S        01:06:03      22.4                           ___                        __              606348877 ISC   IR       -- ISA   ISC   ??? ??? _  34.6117  135.6600   472.0    0.0
+KMR    48.85 307.7 P        00:58:38      -5.5                           T__                        __              606348876 ISC   IR       -- ISA   ISC   ??? ??? _  48.0565   14.1319   379.0    0.0
+POT    49.23 313.5 P        00:58:46      -0.3                           T__                        __              606348878 ISC   IR       -- ISA   ISC   ??? ??? _  52.3803   13.0678    80.0    0.0
+POT    49.23 313.5 S        01:05:51       0.1                           T__                        __              606348878 ISC   IR       -- ISA   ISC   ??? ??? _  52.3803   13.0678    80.0    0.0
+TRS    49.39 304.6 P        00:58:44      -3.6                           T__                        __              606348880 ISC   IR       -- ISA   ISC   ??? ??? _  45.6428   13.7539     8.0    0.0
+TRS    49.39 304.6 S        01:05:43     -10.4                           T__                        __              606348880 ISC   IR       -- ISA   ISC   ??? ??? _  45.6428   13.7539     8.0    0.0
+POL    49.43 303.5 P        00:58:50       2.0                           T__                        __              606348879 ISC   IR       -- ISA   ISC   ??? ??? _  44.8667   13.8500    32.0    0.0
+POL    49.43 303.5 S        01:05:58       4.0                           T__                        __              606348879 ISC   IR       -- ISA   ISC   ??? ??? _  44.8667   13.8500    32.0    0.0
+LEI    49.70 312.1 P        00:58:44      -5.9                           T__                        __              606348881 ISC   IR       -- ISA   ISC   ??? ??? _  51.3350   12.3917   113.0    0.0
+LEI    49.70 312.1 S        01:05:53      -4.7                           T__                        __              606348881 ISC   IR       -- ISA   ISC   ??? ??? _  51.3350   12.3917   113.0    0.0
+JEN    50.24 311.7 P        00:58:54      -0.0                           T__         25000.0  7.00  _i                  24988 ISC   IR       --       ISC   ??? ??E _  50.9519   11.5833   193.0    0.0
+JEN    50.24 311.7 P        00:58:54      -0.0                           T__         12000.0  7.00  _i                  24988 ISC   IR       --       ISC   ??? ??N _  50.9519   11.5833   193.0    0.0
+JEN    50.24 311.7 P        00:58:54      -0.0                           T__         12000.0  9.00  _i                  24988 ISC   IR       --       ISC   ??? ??N _  50.9519   11.5833   193.0    0.0
+JEN    50.24 311.7 P        00:58:54      -0.0                           T__         25000.0  9.00  _i                  24988 ISC   IR       --       ISC   ??? ??E _  50.9519   11.5833   193.0    0.0
+JEN    50.24 311.7 S        01:06:06       0.8                           T__         70000.0 11.00  _i                  24988 ISC   IR       --       ISC   ??N ??N _  50.9519   11.5833   193.0    0.0
+JEN    50.24 311.7 L        01:16:00                                     ___        170000.0 12.00  _e MS     7.3       24988 ISC   IR       --       ISC   ??N B?N _  50.9519   11.5833   193.0    0.0
+JEN    50.24 311.7 L        01:18:42                                     ___                        _e                  24988 ISC   IR       --       ISC   ??N ??? _  50.9519   11.5833   193.0    0.0
+JEN    50.24 311.7          02:01:06                                     ___                        _i                  24988 ISC   IR       --       ISC   ??E ??? _  50.9519   11.5833   193.0    0.0
+JEN    50.24 311.7          02:05:30                                     ___         22500.0 13.00  _i                  24988 ISC   IR       --       ISC   ??E ??E _  50.9519   11.5833   193.0    0.0
+JEN    50.24 311.7 L        02:16:18                                     ___         70000.0  9.00  __                  24988 ISC   IR       --       ISC   ??E B?E _  50.9519   11.5833   193.0    0.0
+JEN    50.24 311.7 M        02:23:24                                     ___        395000.0 13.00  __ MS     7.6       24988 ISC   IR       --       ISC   ??E B?E _  50.9519   11.5833   193.0    0.0
+JEN    50.24 311.7 M        02:26:12                                     ___        290000.0 11.00  __                  24988 ISC   IR       --       ISC   ??E B?E _  50.9519   11.5833   193.0    0.0
+JEN    50.24 311.7 M        02:42:54                                     ___         80000.0 15.00  __                  24988 ISC   IR       --       ISC   ??E B?E _  50.9519   11.5833   193.0    0.0
+JEN    50.24 311.7 M        02:45:54                                     ___         80000.0 15.00  __                  24988 ISC   IR       --       ISC   ??E B?E _  50.9519   11.5833   193.0    0.0
+PAD    50.72 304.5 P        00:58:58       0.3                           T__                        __              606348883 ISC   IR       -- ISA   ISC   ??? ??? _  45.4086   11.8861    12.0    0.0
+PAD    50.72 304.5 S        01:06:27      15.0                           ___                        __              606348883 ISC   IR       -- ISA   ISC   ??? ??? _  45.4086   11.8861    12.0    0.0
+RDP    50.79 299.7 P        00:58:51      -7.4                           ___                        __              606348882 ISC   IR       -- ISA   ISC   ??? ??? _  41.7583   12.7167   760.0    0.0
+RDP    50.79 299.7 S        01:06:42      28.8                           ___                        __              606348882 ISC   IR       -- ISA   ISC   ??? ??? _  41.7583   12.7167   760.0    0.0
+GTT    51.20 312.6 P        00:58:55      -6.3                           T__         25000.0  1.00  __                    340 ISC   IR       --       ISC   ??E ??E _  51.5464    9.9642   272.0    0.0
+GTT    51.20 312.6 P        00:58:55      -6.3                           T__          2500.0  1.00  __                    340 ISC   IR       --       ISC   ??N ??N _  51.5464    9.9642   272.0    0.0
+GTT    51.20 312.6 P        00:58:55      -6.3                           T__         25000.0  4.00  __                    340 ISC   IR       --       ISC   ??E ??E _  51.5464    9.9642   272.0    0.0
+GTT    51.20 312.6 P        00:58:55      -6.3                           T__          2500.0  4.00  __                    340 ISC   IR       --       ISC   ??N ??N _  51.5464    9.9642   272.0    0.0
+GTT    51.20 312.6 S        01:06:08     -10.5                           ___        100000.0 15.00  _i                    340 ISC   IR       --       ISC   ??N ??N _  51.5464    9.9642   272.0    0.0
+GTT    51.20 312.6 M        01:19:00                                     ___        200000.0 10.00  __                    340 ISC   IR       --       ISC   ??E B?E _  51.5464    9.9642   272.0    0.0
+GTT    51.20 312.6 M        01:19:00                                     ___        300000.0 10.00  __                    340 ISC   IR       --       ISC   ??N B?N _  51.5464    9.9642   272.0    0.0
+GTT    51.20 312.6 M        01:22:00                                     ___        350000.0 10.00  __ MS     7.7         340 ISC   IR       --       ISC   ??E B?E _  51.5464    9.9642   272.0    0.0
+GTT    51.20 312.6 M        01:22:00                                     ___        350000.0 10.00  __ MS     7.7         340 ISC   IR       --       ISC   ??N B?N _  51.5464    9.9642   272.0    0.0
+TOK    51.40  68.1 P        00:59:08       5.1                           T__                        __              606348885 ISC   IR       -- ISA   ISC   ??? ??? _  35.6867  139.7583  -285.0    0.0
+TOK    51.40  68.1 S        01:06:25       3.4                           T__                        __              606348885 ISC   IR       -- ISA   ISC   ??? ??? _  35.6867  139.7583  -285.0    0.0
+FIR    51.45 302.5 P        00:59:08       4.7                           T__                        __              606348884 ISC   IR       -- ISA   ISC   ??? ??? _  43.7739   11.2550    46.0    0.0
+FIR    51.45 302.5 S        01:06:24       1.9                           T__                        __              606348884 ISC   IR       -- ISA   ISC   ??? ??? _  43.7739   11.2550    46.0    0.0
+MIZ    51.58  63.5 P        00:59:08       3.7                           T__                        __              606348886 ISC   IR       -- ISA   ISC   ??? ??? _  39.1343  141.1360    63.0    0.0
+MIZ    51.58  63.5 S        01:06:28       4.0                           T__                        __              606348886 ISC   IR       -- ISA   ISC   ??? ??? _  39.1343  141.1360    63.0    0.0
+UCC    54.80 312.2 P        00:59:38      10.2                           ___                        __              606348887 ISC   IR       -- ISA   ISC   ??? ??? _  50.7983    4.3594   105.0    0.0
+UCC    54.80 312.2 S        01:07:08       0.5                           T__                        __              606348887 ISC   IR       -- ISA   ISC   ??? ??? _  50.7983    4.3594   105.0    0.0
+EDI    58.24 319.3 P        01:01:00      67.8                           ___                        __              606348889 ISC   IR       -- ISA   ISC   ??? ??? _  55.9233   -3.1875   125.0    0.0
+EDI    58.24 319.3 S        01:08:00       7.1                           T__                        __              606348889 ISC   IR       -- ISA   ISC   ??? ??? _  55.9233   -3.1875   125.0    0.0
+SHID   58.33 313.0 P        01:01:00      67.1                           ___                        __              606348888 ISC   IR       -- ISA   ISC   ??? ??? _  50.6833   -1.2833     0.0    0.0
+COI    66.47 303.7 P        01:01:18      30.4                           ___                        __              606348890 ISC   IR       -- ISA   ISC   ??? ??? _  40.2080   -8.4124   140.0    0.0
+COI    66.47 303.7 S        01:09:12     -25.0                           ___                        __              606348890 ISC   IR       -- ISA   ISC   ??? ??? _  40.2080   -8.4124   140.0    0.0
+WAS   104.79 339.1 PP       01:08:25       1.7                           ___                        __              606348891 ISC   IR       -- ISA   ISC   ??? ??? _  38.8925  -77.0331     0.0    0.0
+CLH   104.88 338.9 PP       01:08:39      15.0                           ___                        __              606348892 ISC   IR       -- ISA   ISC   ??? ??? _  38.7347  -76.8458     0.0    0.0
+HON   105.04  52.1 P        01:08:36                                     ___                        __              606348893 ISC   IR       -- ISA   ISC   ??? ??? _  21.3242 -158.0010     2.0    0.0
+API   115.27  90.6 P        01:01:36                                     ___                        _e                   8800 ISC   IR       --       ISC   ??? ??? _ -13.8072 -171.7750     2.0    0.0
+API   115.27  90.6 S        01:19:18                                     ___         40000.0 17.00  _e                   8800 ISC   IR       --       ISC   ??N ??N _ -13.8072 -171.7750     2.0    0.0
+API   115.27  90.6 S        01:19:18                                     ___         45000.0 17.00  _e                   8800 ISC   IR       --       ISC   ??N ??E _ -13.8072 -171.7750     2.0    0.0
+API   115.27  90.6 L        01:40:00                                     ___        325000.0 44.00  __                   8800 ISC   IR       --       ISC   ??N B?N _ -13.8072 -171.7750     2.0    0.0
+API   115.27  90.6 L        01:40:00                                     ___        325000.0 44.00  __                   8800 ISC   IR       --       ISC   ??N B?E _ -13.8072 -171.7750     2.0    0.0
+API   115.27  90.6 M        01:50:00                                     ___        375000.0 27.00  __ MS     7.9        8800 ISC   IR       --       ISC   ??N B?N _ -13.8072 -171.7750     2.0    0.0
+API   115.27  90.6 M        01:50:00                                     ___        275000.0 27.00  __ MS     7.7        8800 ISC   IR       --       ISC   ??N B?E _ -13.8072 -171.7750     2.0    0.0
+CHR   115.52 126.7 PP       01:10:00      17.7                           ___                        __              606348894 ISC   IR       -- ISA   ISC   ??? ??? _ -43.5311  172.6268     8.0    0.0
+CHR   115.52 126.7 SS       01:25:54      13.4                           ___                        __              606348894 ISC   IR       -- ISA   ISC   ??? ??? _ -43.5311  172.6268     8.0    0.0
+TAC   128.11 355.2 PP       01:11:25      18.2                           ___                        __              606348895 ISC   IR       -- ISA   ISC   ??? ??? _  19.4050  -99.1936  2297.0    0.0
+TAC   128.11 355.2 SS       01:28:03     -16.2                           ___                        __              606348895 ISC   IR       -- ISA   ISC   ??? ??? _  19.4050  -99.1936  2297.0    0.0
+
+
+STOP
+
+Agencies whose data contributed towards the results of this search:
+
+ CENT      Centennial Earthquake Catalog                                                    U.S.A.
+ ISC       International Seismological Centre                                               United Kingdom
+ ISS       International Seismological Summary                                              United Kingdom
+
+International Seismological Centre
+Pipers Lane, Thatcham, Berkshire
+United Kingdom RG19 4NS
++44 (0)1635 861022, voice; +44 (0)1635 872351, fax
+adminisc.ac.uk, e-mail
+
+
