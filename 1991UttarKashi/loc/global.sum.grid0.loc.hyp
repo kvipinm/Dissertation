@@ -1,0 +1,18 @@
+NLLOC "./loc/global.19911019.212329.grid0" "LOCATED" "Location completed."
+SIGNATURE "Vipin Maurya (GPT, IIT Roorkee)   obs:./obs/19911019.2123_uk.isf   NLLoc:v7.00.00(27Oct2017)  run:16Mar2022 15h47m42"
+COMMENT "ISC_IMS1.0 events"
+GRID  361 181 601  -180 -90 0  1 1 1 PROB_DENSITY
+SEARCH OCTREE nInitial 17628 nEvaluated 50004 smallestNodeSide 1.906925/1.628832/0.391276 oct_tree_integral 2.455522e+04 scatter_volume 2.455522e+04
+HYPOCENTER  x 78.9301 y 30.8423 z 45.9749  OT 21.7258  ix -1 iy -1 iz -1 MAXIMUM_LIKELIHOOD
+GEOGRAPHIC  OT 1991 10 19  21 23 21.725777  Lat 30.842285 Long 78.930069 Depth 45.974935
+QUALITY  Pmax 1.26946e+125 MFmin 20.1502 MFmax 20.3234 RMS 1.17788 Nphs 50 Gap 65.3723 Dist 13.1446 Mamp -9.90 0 Mdur -9.90 0
+VPVSRATIO  VpVsRatio 1.99177  Npair 136  Diff 660.3
+STATISTICS  ExpectX 78.9298 Y 30.8252 Z 51.6913  CovXX 30.5309 XY 17.8312 XZ 18.5941 YY 82.4316 YZ -41.5992 ZZ 1183.35 EllAz1  108.058 Dip1  -1.51085 Len1  9.24289 Az2  198.104 Dip2  -1.7637 Len2  17.5159 Len3  6.468184e+01
+STAT_GEOG  ExpectLat 30.825158 Long 78.929784 Depth 51.691297
+TRANSFORM  GLOBAL
+QML_OriginQuality  assocPhCt 1496  usedPhCt 50  assocStaCt -1  usedStaCt 50  depthPhCt -1  stdErr 1.17788  azGap 65.3723  secAzGap 72.117  gtLevel -  minDist 1461.61 maxDist 2964.16 medDist 2804.87
+QML_OriginUncertainty  horUnc -1  minHorUnc 7.58214  maxHorUnc 14.2241  azMaxHorUnc 17.247
+QML_ConfidenceEllipsoid  semiMajorAxisLength 64.6818  semiMinorAxisLength 9.24289  semiIntermediateAxisLength 17.5159  majorAxisPlunge 87.6773  majorAxisAzimuth 157.495  majorAxisRotation 139.321
+FOCALMECH  Hyp  30.842285 78.930069 45.974935 Mech  0 0 0 mf  0 nObs 0
+END_NLLOC
+
