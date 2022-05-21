@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
+# In[26]:
 
 
 import numpy as np
@@ -12,30 +12,31 @@ try:
     data = np.fromfile("loc/global.19340115.084418.grid0.loc.scat", dtype=dt)
     df = pd.DataFrame(data)
     df = df.iloc[1: , :]
-    print(df)
+    # print(df)
     #df.to_csv("global.20031203.073729.grid0.loc.scat.asc", sep='\t',index=False)
 except IOError:
     print("Error while opening the file!")
 
 
-# In[2]:
+# In[34]:
 
 
-import pandas as pd
 from scipy.io import loadmat
 
 locs=pd.read_csv('1934BiharNepal.csv')
+# print(locs)
 loc1=locs.iloc[0:-1, :]
-loc2=locs.iloc[-1:]
+loc2=locs.iloc[-1]
 
 staloc=pd.read_csv("./loc/last.stations",header=None, sep=' ')
+staloc = staloc.drop(staloc[staloc[1] < -180].index)
 
 region = [85.1, 88.1, 25.5, 28.5 ]
 topo_data = "@earth_relief_01s" #01s
 flt = loadmat('/home/vipin/Documents/GIS2000.mat')
 
 
-# In[10]:
+# In[3]:
 
 
 import pygmt
@@ -110,7 +111,7 @@ with fig.inset(position="jBR+w3c/3c+o0.1c", box="+gwhite+p1p"):
         shorelines="1/thin",
         water="white",
         # Use dcw to selectively highlight an area
-        dcw="US.MA+gred",
+        # dcw="US.MA+gred",
     )
     rectangle = [[region[0], region[2], region[1], region[3]]]
     fig.plot(data=rectangle, projection="M3c", style="r+s", pen="1p,red")
@@ -118,13 +119,15 @@ with fig.inset(position="jBR+w3c/3c+o0.1c", box="+gwhite+p1p"):
 fig.show()
 
 
-# In[8]:
+# In[4]:
 
 
 import pygmt
 
 fig = pygmt.Figure()
-fig.coast(projection="E78/36/4.5i", region="g", frame="g", land="white", water="skyblue")
+# fig.coast(projection="E78/36/4.5i", region="g", frame="g", land="white", water="skyblue")
+fig.coast(projection="N78/15c", region="g", frame="g", land="white", water="skyblue")
+
 fig.plot(
     x=staloc[1],
     y=staloc[2],
@@ -150,17 +153,47 @@ locs=locs[["Date", "Time", "Latitude", "Longitude", "Depth", "Author" ]]
 locs.to_csv("1934BiharNepal-loc.csv", index=False)
 
 
-# In[8]:
+# In[37]:
 
 
-import pygmt
-
+# Depth distribution
 fig = pygmt.Figure()
-# Make a Sinusoidal projection map of the Americas with automatic annotations,
-# ticks and gridlines
-fig.basemap(region=[region[0]-4, region[1]+2.5, region[2]-4, region[3]+2.5], projection="M15c", frame="afg")
-# Plot each level of the boundaries dataset with a different color.
-fig.coast(borders=["1/0.5p,black", "2/0.5p,red", "3/0.5p,blue"], land="gray")
+Xm = 500
+Ym = 400
+
+fig.histogram(
+    data=-df.z,
+    # define the frame, add title and set background color to
+    # lightgray, add annotations for x and y axis
+    frame=['WSne+t"Histogram"+gwhite', 'x+l"Depth (km)"', 'y+l"Counts"'],
+    # generate evenly spaced bins by increments of 5
+    series=5,
+    # use red3 as color fill for the bars
+    fill="lightgray",
+    # use a pen size of 1p to draw the outlines
+    pen="1p",
+    # choose histogram type 0 = counts [default]
+    histtype=0,
+    horizontal=True,
+    region="-"+str(Ym)+"/0/0/"+str(Xm)
+)
+
+# Plot depth from literature
+
+for dep in loc1.Depth.astype(float):
+    fig.plot(region="0/"+str(Xm)+"/-"+str(Ym)+"/0",
+             frame=False,
+             x=[0, Xm],
+             y=[-dep, -dep],
+             pen="2p,blue")
+
+print(loc2.Depth)
+    
+fig.plot(region="0/"+str(Xm)+"/-"+str(Ym)+"/0",
+        frame=False,
+        x=[0, Xm],
+        y=[-1*loc2.Depth, -1*loc2.Depth],
+        pen="2p,cyan")
 fig.show()
 
 

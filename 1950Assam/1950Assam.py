@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
+# In[12]:
 
 
 import numpy as np
@@ -12,28 +12,29 @@ try:
     data=np.fromfile("./loc/global.19500815.141150.grid0.loc.scat", dtype=dt)
     df=pd.DataFrame(data)
     df=df.iloc[1: , :]
-    print(df)
+    # print(df)
 except IOError:
     print("Error while opening the file!")
 
 
-# In[2]:
+# In[10]:
 
 
 from scipy.io import loadmat
 
 locs=pd.read_csv('1950Assam.csv')
 loc1=locs.iloc[0:-1, :]
-loc2=locs.iloc[-1:]
+loc2=locs.iloc[-1]
 
 staloc=pd.read_csv("./loc/last.stations",header=None, sep=' ')
+staloc = staloc.drop(staloc[staloc[1] < -180].index)
 
 region = [96.25, 97.5, 27.75, 29 ]
 topo_data = "@earth_relief_01s" #01s
 flt = loadmat('/home/vipin/Documents/GIS2000.mat')
 
 
-# In[15]:
+# In[3]:
 
 
 import pygmt
@@ -116,14 +117,20 @@ with fig.inset(position="jBR+w3c/3c+o0.1c", box="+gwhite+p1p"):
 fig.show()
 
 
-# In[ ]:
+# In[4]:
 
-
-import pygmt
 
 fig = pygmt.Figure()
+#fig.coast(projection="G78/36/4.5i", region="g", frame="g", land="white", water="skyblue")
+fig.coast(projection="N78/15c", region="g", frame="g", land="white", water="skyblue")
 
-fig.coast(projection="E96/28/4.5i", region="g", frame="g", land="white", water="skyblue")
+fig.plot(
+    x=staloc[1],
+    y=staloc[2],
+    style="i0.15",
+    color="red",
+    pen="0.001p,black"
+)
 
 fig.plot(
     x=loc2.Longitude,
@@ -131,15 +138,6 @@ fig.plot(
     style="a0.3",
     color='blue'
 )
-
-fig.plot(
-    x=staloc[1],
-    y=staloc[2],
-    style="i0.1",
-    color="red",
-    pen="0.01p,black"
-)
-
 fig.show()
 
 
@@ -148,6 +146,50 @@ fig.show()
 
 alllocs=locs[["Date", "Time", "Latitude", "Longitude", "Depth", "Author" ]]
 alllocs.to_csv("1950Assam-loc.csv", index=False)
+
+
+# In[11]:
+
+
+# Depth distribution
+fig = pygmt.Figure()
+Xm = 1300
+Ym = 250
+
+fig.histogram(
+    data=-df.z,
+    # define the frame, add title and set background color to
+    # lightgray, add annotations for x and y axis
+    frame=['WSne+t"Histogram"+gwhite', 'x+l"Depth (km)"', 'y+l"Counts"'],
+    # generate evenly spaced bins by increments of 5
+    series=5,
+    # use red3 as color fill for the bars
+    fill="lightgray",
+    # use a pen size of 1p to draw the outlines
+    pen="1p",
+    # choose histogram type 0 = counts [default]
+    histtype=0,
+    horizontal=True,
+    region="-"+str(Ym)+"/0/0/"+str(Xm)
+)
+
+# Plot depth from literature
+
+for dep in loc1.Depth.astype(float):
+    fig.plot(region="0/"+str(Xm)+"/-"+str(Ym)+"/0",
+             frame=False,
+             x=[0, Xm],
+             y=[-dep, -dep],
+             pen="2p,blue")
+
+print(loc2.Depth)
+    
+fig.plot(region="0/"+str(Xm)+"/-"+str(Ym)+"/0",
+        frame=False,
+        x=[0, Xm],
+        y=[-1*loc2.Depth, -1*loc2.Depth],
+        pen="2p,cyan")
+fig.show()
 
 
 # In[ ]:

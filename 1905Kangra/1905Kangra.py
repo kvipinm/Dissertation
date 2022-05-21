@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[5]:
+# In[1]:
 
 
 import numpy as np
@@ -17,29 +17,31 @@ except IOError:
     print("Error while opening the file!")
 
 
-# In[25]:
+# In[5]:
 
 
 from scipy.io import loadmat
 
 locs=pd.read_csv('1905Kangra.csv')
 loc1=locs.iloc[0:-1, :]
-loc2=locs.iloc[-1:]
+loc2=locs.iloc[-1]
+
 staloc=pd.read_csv("./loc/last.stations",header=None, sep=' ')
+staloc = staloc.drop(staloc[staloc[1] < -180].index)
 
 region = [75, 78, 31, 34 ]
-topo_data = "@earth_relief_01s" #01s
+topo_data = "@earth_relief_01m" #01s
 flt = loadmat('/home/vipin/Documents/GIS2000.mat')
 
 
-# In[26]:
+# In[9]:
 
 
 import pygmt
 
 fig = pygmt.Figure()
 
-# pygmt.makecpt(cmap="gray", series=[-8000, 8000])
+pygmt.makecpt(cmap="gray", series=[-8000, 8000])
 
 fig.grdimage(
     grid=topo_data,
@@ -98,52 +100,30 @@ fig.text(
 )
 
 with fig.inset(position="jBR+w3c/3c+o0.1c", box="+gwhite+p1p"):
-    pygmt.makecpt(cmap="geo", series=[-8000, 8000])
-    fig.grdimage(
-        grid=topo_data,
-        region=[region[0]-5, region[1]+5, region[2]-5, region[3]+5],
-        projection='M3c',
-        shading=True,
-        frame=True,
-        cmap=False
-    )
     fig.coast(
         region=[region[0]-5, region[1]+5, region[2]-5, region[3]+5],
         projection="M3c",
-        # borders=[1, 2],
+        land="gray",
+        borders=[1, 2],
         shorelines="1/thin",
         water="white",
         # Use dcw to selectively highlight an area
-        dcw="US.MA+gred",
+        # dcw="US.MA+gred",
     )
     rectangle = [[region[0], region[2], region[1], region[3]]]
     fig.plot(data=rectangle, projection="M3c", style="r+s", pen="1p,red")
 fig.show()
 
 
-# In[4]:
+# In[6]:
 
 
-import pygmt    
-fig.grdimage(
-    grid=topo_data,
-    region=[region[0]-2, region[1]+2, region[2]-2.5, region[3]+1.5],
-    projection='M15c',
-    shading=True,
-    frame=True,
-    cmap=False
-)
-fig.coast(
-    region=[region[0]-2, region[1]+2, region[2]-2.5, region[3]+1.5],
-    projection="M15c",
-    # borders=[1, 2],
-    shorelines="1/thin",
-    water="white",
-    # Use dcw to selectively highlight an area
-    dcw="US.MA+gred",
-)
-rectangle = [[region[0], region[2], region[1], region[3]]]
-fig.plot(data=rectangle, projection="M15c", style="r+s", pen="1p,red")me="g", land="white", water="skyblue")
+import pygmt
+
+fig = pygmt.Figure()
+# fig.coast(projection="E78/36/4.5i", region="g", frame="g", land="white", water="skyblue")
+fig.coast(projection="N78/15c", region="g", frame="g", land="white", water="skyblue")
+
 fig.plot(
     x=staloc[1],
     y=staloc[2],
@@ -169,29 +149,47 @@ locs=locs[["Date", "Time", "Latitude", "Longitude", "Depth", "Author" ]]
 locs.to_csv("1905Kangra-loc.csv", index=False)
 
 
-# In[18]:
+# In[8]:
 
 
+# Depth distribution
 fig = pygmt.Figure()
-fig.grdimage(
-    grid=topo_data,
-    region=[region[0]-2, region[1]+2, region[2]-2.5, region[3]+1.5],
-    projection='M15c',
-    shading=True,
-    frame=True,
-    cmap=False
+Xm = 1500
+Ym = 150
+
+fig.histogram(
+    data=-df.z,
+    # define the frame, add title and set background color to
+    # lightgray, add annotations for x and y axis
+    frame=['WSne+t"Histogram"+gwhite', 'x+l"Depth (km)"', 'y+l"Counts"'],
+    # generate evenly spaced bins by increments of 5
+    series=5,
+    # use red3 as color fill for the bars
+    fill="lightgray",
+    # use a pen size of 1p to draw the outlines
+    pen="1p",
+    # choose histogram type 0 = counts [default]
+    histtype=0,
+    horizontal=True,
+    region="-"+str(Ym)+"/0/0/"+str(Xm)
 )
-fig.coast(
-    region=[region[0]-2, region[1]+2, region[2]-2.5, region[3]+1.5],
-    projection="M15c",
-    # borders=[1, 2],
-    shorelines="1/thin",
-    water="white",
-    # Use dcw to selectively highlight an area
-    dcw="US.MA+gred",
-)
-rectangle = [[region[0], region[2], region[1], region[3]]]
-fig.plot(data=rectangle, projection="M15c", style="r+s", pen="1p,red")
+
+# Plot depth from literature
+
+for dep in loc1.Depth.astype(float):
+    fig.plot(region="0/"+str(Xm)+"/-"+str(Ym)+"/0",
+             frame=False,
+             x=[0, Xm],
+             y=[-dep, -dep],
+             pen="2p,blue")
+
+print(loc2.Depth)
+    
+fig.plot(region="0/"+str(Xm)+"/-"+str(Ym)+"/0",
+        frame=False,
+        x=[0, Xm],
+        y=[-1*loc2.Depth, -1*loc2.Depth],
+        pen="2p,cyan")
 fig.show()
 
 
