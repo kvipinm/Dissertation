@@ -12,12 +12,12 @@ try:
     data=np.fromfile("./loc/global.19050404.005224.grid0.loc.scat", dtype=dt)
     df=pd.DataFrame(data)
     df=df.iloc[1: , :]
-    print(df)
+    # print(df)
 except IOError:
     print("Error while opening the file!")
 
 
-# In[5]:
+# In[2]:
 
 
 from scipy.io import loadmat
@@ -30,7 +30,7 @@ staloc=pd.read_csv("./loc/last.stations",header=None, sep=' ')
 staloc = staloc.drop(staloc[staloc[1] < -180].index)
 
 region = [75, 78, 31, 34 ]
-topo_data = "@earth_relief_01m" #01s
+topo_data = "@earth_relief_01s" #01s
 flt = loadmat('/home/vipin/Documents/GIS2000.mat')
 
 
@@ -115,7 +115,7 @@ with fig.inset(position="jBR+w3c/3c+o0.1c", box="+gwhite+p1p"):
 fig.show()
 
 
-# In[6]:
+# In[5]:
 
 
 import pygmt
@@ -145,8 +145,8 @@ fig.show()
 # In[3]:
 
 
-locs=locs[["Date", "Time", "Latitude", "Longitude", "Depth", "Author" ]]
-locs.to_csv("1905Kangra-loc.csv", index=False)
+# locs=locs[["Date", "Time", "Latitude", "Longitude", "Depth", "Author" ]]
+# locs.to_csv("1905Kangra-loc.csv", index=False)
 
 
 # In[8]:
@@ -191,6 +191,42 @@ fig.plot(region="0/"+str(Xm)+"/-"+str(Ym)+"/0",
         y=[-1*loc2.Depth, -1*loc2.Depth],
         pen="2p,cyan")
 fig.show()
+
+
+# In[35]:
+
+
+import matplotlib.pyplot as plt
+
+psum=sum(df.pdf)
+
+plt.rcParams["figure.figsize"] = (10,int(Ym/10))
+
+plt.hist(
+    -df.z,
+    weights=df.pdf/psum,
+    bins=int(Ym/5),
+    orientation="horizontal",
+    range=[-Ym, 0],
+    color='gray',
+    histtype='bar',
+    ec='black'
+)
+
+for dep in loc1.Depth:
+    plt.axhline(y=-dep, color='blue')
+plt.axhline(y=-loc2.Depth, color='cyan')
+
+# plt.ylim(ymin=0)
+plt.ylim(ymax=0)
+plt.title('Title',fontsize=30)
+plt.xlabel('Probability')
+plt.ylabel('Depth') #,fontsize=30)
+
+# plt.legend(loc='upper right',fontsize=30)
+# plt.xticks(fontsize = 20) 
+# plt.yticks(fontsize = 20) 
+plt.show() 
 
 
 # In[ ]:
