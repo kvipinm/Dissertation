@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[33]:
+# In[13]:
 
 
 import numpy as np
@@ -20,7 +20,7 @@ except IOError:
     print("Error while opening the file!")
 
 
-# In[50]:
+# In[14]:
 
 
 from scipy.io import loadmat
@@ -41,7 +41,7 @@ topo_data = "@earth_relief_01s" #01s
 region = [74, 79, 30, 35 ]
 
 
-# In[36]:
+# In[15]:
 
 
 import pygmt
@@ -124,7 +124,7 @@ with fig1.inset(position="jBR+w3c/3c+o0.1c", box="+gwhite+p1p"):
 # fig1.show()
 
 
-# In[46]:
+# In[16]:
 
 
 import pygmt
@@ -152,7 +152,7 @@ fig2.plot(
 # fig2.show()
 
 
-# In[54]:
+# In[17]:
 
 
 import matplotlib.pyplot as plt
@@ -180,32 +180,29 @@ plt.axhline(y=loc2.Depth, color='cyan')
 
 plt.ylim(ymin=0)
 # plt.title('Title',fontsize=30)
-plt.xlabel('Probability')
-plt.ylabel('Depth') #,fontsize=30)
+plt.xlabel('Probability', fontsize=30)
+plt.ylabel('Depth', fontsize=30)
 # plt.legend(loc='upper right',fontsize=30)
-# plt.xticks(fontsize = 20) 
-# plt.yticks(fontsize = 20) 
 
 ax=plt.gca()                            # get the axis
 ax.set_ylim(ax.get_ylim()[::-1])        # invert the axis
 ax.xaxis.tick_top()                     # and move the X-Axis    
 ax.xaxis.set_label_position('top')
 
-plt.savefig('depth_prob.pdf')
-# plt.savefig('depth_prob.png')
-plt.savefig('depth_prob.png', bbox_inches='tight')
+plt.xticks(fontsize = 20) 
+plt.yticks(fontsize = 20) 
+
+plt.savefig('1905Kangra_depth_prob.png', bbox_inches='tight')
 # plt.show() 
 
 
-# In[44]:
+# In[18]:
 
 
 # Save figures to png
 print("saving figures...")
-fig1.savefig('pdf.png')
-fig1.savefig('pdf.pdf')
-fig2.savefig('sta.png')
-fig2.savefig('sta.pdf')
+fig1.savefig('1905Kangra_pdf_samples.png')
+fig2.savefig('1905Kangra_stations.png')
 
 # To generate a table of time and location of the earthquake
 # calculated by various authors
@@ -216,7 +213,7 @@ fig2.savefig('sta.pdf')
 print("all operation completed.")
 
 
-# In[ ]:
+# In[19]:
 
 
 # Depth distribution
@@ -258,7 +255,7 @@ print("all operation completed.")
 # fig.show()
 
 
-# In[1]:
+# In[20]:
 
 
 # import cv2

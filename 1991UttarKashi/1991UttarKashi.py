@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[11]:
+# In[1]:
 
 
 import numpy as np
@@ -18,7 +18,7 @@ except IOError:
     print("Error while opening the file!")
 
 
-# In[12]:
+# In[16]:
 
 
 from scipy.io import loadmat
@@ -36,10 +36,10 @@ print("reading faults(.mat) file...")
 flt = loadmat('/home/vipin/Documents/GIS2000.mat')
 
 topo_data = "@earth_relief_01s" #01s
-region = [78.70, 79.10, 30.65, 31.05 ]
+region = [78.60, 79.20, 30.50, 31.20 ]
 
 
-# In[13]:
+# In[17]:
 
 
 import pygmt
@@ -81,7 +81,7 @@ fig1.plot(
     y=df.y,
     color=df.pdf,
     #cmap=True,
-    style="c0.04",
+    style="c0.05",
     pen="magenta"
 )
 
@@ -147,7 +147,7 @@ fig2.plot(
 # fig2.show()
 
 
-# In[6]:
+# In[7]:
 
 
 import matplotlib.pyplot as plt
@@ -175,32 +175,30 @@ plt.axhline(y=loc2.Depth, color='cyan')
 
 plt.ylim(ymin=0)
 # plt.title('Title',fontsize=30)
-plt.xlabel('Probability')
-plt.ylabel('Depth') #,fontsize=30)
+plt.xlabel('Probability', fontsize=30)
+plt.ylabel('Depth' ,fontsize=30)
 # plt.legend(loc='upper right',fontsize=30)
-# plt.xticks(fontsize = 20) 
-# plt.yticks(fontsize = 20) 
+
 
 ax=plt.gca()                            # get the axis
 ax.set_ylim(ax.get_ylim()[::-1])        # invert the axis
 ax.xaxis.tick_top()                     # and move the X-Axis    
 ax.xaxis.set_label_position('top')
 
-plt.savefig('depth_prob.pdf')
-# plt.savefig('depth_prob.png')
-plt.savefig('depth_prob.png', bbox_inches='tight')
+plt.xticks(fontsize = 20) 
+plt.yticks(fontsize = 20) 
+
+plt.savefig('1991UttarKashi_depth_prob.png', bbox_inches='tight')
 # plt.show() 
 
 
-# In[14]:
+# In[18]:
 
 
 # Save figures to png
 print("saving figures...")
-fig1.savefig('pdf.png')
-# fig1.savefig('pdf.pdf')
-fig2.savefig('sta.png')
-# fig2.savefig('sta.pdf')
+fig1.savefig('1991UttarKashi_pdf_samples.png')
+fig2.savefig('1991UttarKashi_stations.png')
 
 # To generate a table of time and location of the earthquake
 # calculated by various authors

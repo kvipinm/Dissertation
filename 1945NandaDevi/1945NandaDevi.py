@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[5]:
+# In[7]:
 
 
 import numpy as np
@@ -10,7 +10,7 @@ import pandas as pd
 try:
     print("reading pdf(.scat) file...")
     dt=np.dtype([('x', 'f'), ('y', 'f'), ('z', 'f'), ('pdf', 'f')])
-    data=np.fromfile("./loc/global.19990328.190532.grid0.loc.scat", dtype=dt)
+    data=np.fromfile("./loc/global.19450604.120948.grid0.loc.scat", dtype=dt)
     df=pd.DataFrame(data)
     df=df.iloc[1: , :]
     # print(df)
@@ -18,7 +18,7 @@ except IOError:
     print("Error while opening the file!")
 
 
-# In[6]:
+# In[8]:
 
 
 from scipy.io import loadmat
@@ -36,10 +36,10 @@ print("reading faults(.mat) file...")
 flt = loadmat('/home/vipin/Documents/GIS2000.mat')
 
 topo_data = "@earth_relief_01s" #01s
-region = [79.1, 79.8, 30.1, 30.8 ]
+region = [79.75, 81, 29.5, 30.75 ]
 
 
-# In[7]:
+# In[9]:
 
 
 import pygmt
@@ -71,43 +71,43 @@ fig1.coast(
 )
 
 fig1.plot(
-    x=df.x,
-    y=df.y,
-    color=df.pdf,
-    #cmap=True,
-    style="c0.02",
-    pen="magenta"
-)
-
-fig1.plot(
     x=flt['x'][0],
     y=flt['y'][0],
     pen="1p,red"
 )
 
 fig1.plot(
+    x=df.x,
+    y=df.y,
+    color=df.pdf,
+    #cmap=True,
+    style="c0.03",
+    pen="magenta"
+)
+
+fig1.plot(
     x=loc1.Longitude,
     y=loc1.Latitude,
-    style="a0.4",
+    style="a0.5",
     color='blue'
 )
 fig1.plot(
     x=loc2.Longitude,
     y=loc2.Latitude,
-    style="a0.4",
+    style="a0.5",
     color='cyan'
 )
 
 fig1.text(
-    x=locs.Longitude+0.03,
-    y=locs.Latitude,
-    font="7p,Helvetica,black",
+    x=locs.Longitude,
+    y=locs.Latitude-0.03,
+    font="8p,Helvetica,black",
     text=locs.Author
 )
 
 with fig1.inset(position="jBR+w3c/3c+o0.1c", box="+gwhite+p1p"):
     fig1.coast(
-        region=[region[0]-4, region[1]+2.5, region[2]-4, region[3]+2.5],
+        region=[region[0]-2.5, region[1]+2.5, region[2]-2.5, region[3]+2.5],
         projection="M3c",
         land="gray",
         borders=[1, 2],
@@ -119,7 +119,7 @@ with fig1.inset(position="jBR+w3c/3c+o0.1c", box="+gwhite+p1p"):
     rectangle = [[region[0], region[2], region[1], region[3]]]
     fig1.plot(data=rectangle, projection="M3c", style="r+s", pen="1p,red")
 
-# fig1.show()
+fig1.show()
 
 
 # In[10]:
@@ -144,15 +144,15 @@ fig2.plot(
     style="a0.3",
     color='blue'
 )
-# fig2.show()
+fig2.show()
 
 
-# In[12]:
+# In[13]:
 
 
 import matplotlib.pyplot as plt
 
-Xm, Ym= 1300, 200
+Xm, Ym = 1300, 100
 psum=sum(df.pdf)
 
 print("creating depth-probability plot...")
@@ -175,32 +175,29 @@ plt.axhline(y=loc2.Depth, color='cyan')
 
 plt.ylim(ymin=0)
 # plt.title('Title',fontsize=30)
-plt.xlabel('Probability')
-plt.ylabel('Depth') #,fontsize=30)
+plt.xlabel('Probability', fontsize=30)
+plt.ylabel('Depth' ,fontsize=30)
 # plt.legend(loc='upper right',fontsize=30)
-# plt.xticks(fontsize = 20) 
-# plt.yticks(fontsize = 20) 
 
 ax=plt.gca()                            # get the axis
 ax.set_ylim(ax.get_ylim()[::-1])        # invert the axis
 ax.xaxis.tick_top()                     # and move the X-Axis    
 ax.xaxis.set_label_position('top')
 
-plt.savefig('depth_prob.pdf')
-# plt.savefig('depth_prob.png')
-plt.savefig('depth_prob.png', bbox_inches='tight')
+plt.xticks(fontsize = 20) 
+plt.yticks(fontsize = 20) 
+
+plt.savefig('1945NandaDevi_depth_prob.png', bbox_inches='tight')
 # plt.show() 
 
 
-# In[11]:
+# In[12]:
 
 
 # Save figures to png
 print("saving figures...")
-fig1.savefig('pdf.png')
-fig1.savefig('pdf.pdf')
-fig2.savefig('sta.png')
-fig2.savefig('sta.pdf')
+fig1.savefig('1945NandaDevi_pdf_samples.png')
+fig2.savefig('1945NandaDevi_stations.png')
 
 # To generate a table of time and location of the earthquake
 # calculated by various authors
