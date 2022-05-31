@@ -4,8 +4,15 @@
 # In[1]:
 
 
+import pygmt
 import numpy as np
 import pandas as pd
+from scipy.io import loadmat
+import matplotlib.pyplot as plt
+
+
+# In[2]:
+
 
 try:
     print("reading pdf(.scat) file...")
@@ -18,31 +25,39 @@ except IOError:
     print("Error while opening the file!")
 
 
-# In[2]:
+# In[3]:
 
-
-from scipy.io import loadmat
 
 print("reading locations(.csv) file...")
 locs=pd.read_csv('locs.csv')
 loc1=locs.iloc[0:-1, :]
 loc2=locs.iloc[-1]
 
+
+# In[4]:
+
+
 print("reading stations(.stations) file...")
 staloc=pd.read_csv("./loc/last.stations",header=None, sep=' ')
 staloc = staloc.drop(staloc[staloc[1] < -180].index)
 
+
+# In[5]:
+
+
 print("reading faults(.mat) file...")
 flt = loadmat('/home/vipin/Documents/GIS2000.mat')
+
+
+# In[6]:
+
 
 topo_data = "@earth_relief_01s" #01s
 region = [79.1, 79.8, 30.1, 30.8 ]
 
 
-# In[3]:
+# In[7]:
 
-
-import pygmt
 
 print("creating pdf plot using pygmt...")
 fig1 = pygmt.Figure()
@@ -67,7 +82,8 @@ fig1.basemap(
 fig1.coast(
     water='white',
     borders='1/1p',
-    shorelines=True
+    shorelines=True,
+    map_scale="jBL+w50k+o0.5c/0.5c+f"
 )
 
 fig1.plot(
@@ -75,7 +91,7 @@ fig1.plot(
     y=df.y,
     color=df.pdf,
     #cmap=True,
-    style="c0.02",
+    style="c0.05",
     pen="magenta"
 )
 
@@ -119,16 +135,17 @@ with fig1.inset(position="jBR+w3c/3c+o0.1c", box="+gwhite+p1p"):
     rectangle = [[region[0], region[2], region[1], region[3]]]
     fig1.plot(data=rectangle, projection="M3c", style="r+s", pen="1p,red")
 
-# fig1.show()
+fig1.savefig('1999Chamoli_pdf_samples.png')
+fig1.show()
 
 
-# In[4]:
+# In[8]:
 
 
 print("plotting stations using pygmt...")
 fig2 = pygmt.Figure()
 #fig2.coast(projection="G78/36/4.5i", region="g", frame="g", land="white", water="skyblue")
-fig2.coast(projection="N78/15c", region="g", frame="g", land="white", water="skyblue")
+fig2.coast(projection="N78/15c", region="g", frame="ag", land="white", water="skyblue")
 
 fig2.plot(
     x=staloc[1],
@@ -144,13 +161,13 @@ fig2.plot(
     style="a0.3",
     color='blue'
 )
-# fig2.show()
+fig2.savefig('1999Chamoli_stations.png')
+fig2.show()
 
 
-# In[7]:
+# In[11]:
 
 
-import matplotlib.pyplot as plt
 
 Xm, Ym= 1300, 200
 psum=sum(df.pdf)
@@ -188,17 +205,12 @@ ax.xaxis.set_label_position('top')
 plt.xticks(fontsize = 20) 
 plt.yticks(fontsize = 20) 
 
-plt.savefig('1990Chamoli_depth_prob.png', bbox_inches='tight')
-# plt.show() 
+plt.savefig('1999Chamoli_depth_prob.png', bbox_inches='tight')
+plt.show()
 
 
-# In[6]:
+# In[10]:
 
-
-# Save figures to png
-print("saving figures...")
-fig1.savefig('1990Chamoli_pdf_samples.png')
-fig2.savefig('1990Chamoli_stations.png')
 
 # To generate a table of time and location of the earthquake
 # calculated by various authors
