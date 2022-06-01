@@ -7,4 +7,6 @@
 *.html
 *.sh
 *.jpeg
+*.mat
+global/
 playground/
